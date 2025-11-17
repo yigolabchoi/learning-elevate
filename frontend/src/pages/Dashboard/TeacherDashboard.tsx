@@ -130,17 +130,17 @@ export const TeacherDashboard = () => {
         <StatCard
           label="전체 반/클래스"
           value={dashboardData.classes.length.toString()}
-          className="bg-gradient-to-br from-blue-500 to-blue-600 text-white"
+          className="bg-linear-to-br from-blue-500 to-blue-600 text-white"
         />
         <StatCard
           label="오늘의 과제"
           value={dashboardData.todayAssignments.length.toString()}
-          className="bg-gradient-to-br from-green-500 to-green-600 text-white"
+          className="bg-linear-to-br from-green-500 to-green-600 text-white"
         />
         <StatCard
           label="확인 대기 중"
           value={dashboardData.pendingSubmissions.length.toString()}
-          className="bg-gradient-to-br from-orange-500 to-orange-600 text-white"
+          className="bg-linear-to-br from-orange-500 to-orange-600 text-white"
         />
       </div>
 
