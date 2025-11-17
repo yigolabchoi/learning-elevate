@@ -26,7 +26,7 @@ import {
 export const StudentList = () => {
   const navigate = useNavigate();
   const { user } = useAuth();
-  const { t, language } = useLanguage();
+  const { language } = useLanguage();
 
   const [students, setStudents] = useState<StudentWithStats[]>([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -148,7 +148,7 @@ export const StudentList = () => {
     <Page>
       <PageHeader
         title={language === 'ko' ? '학생 관리' : 'Student Management'}
-        description={language === 'ko'
+        subtitle={language === 'ko'
           ? '담당 학생들의 학습 현황을 확인하고 개별 지도하세요'
           : 'Monitor and guide your students individually'}
       />
@@ -223,44 +223,43 @@ export const StudentList = () => {
         <Card.Body>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
             <Input
-              placeholder={language === 'ko' ? '학생 이름 검색...' : 'Search student name...'}
+              placeholder={language === 'ko' ? '🔍 학생 이름 검색...' : '🔍 Search student name...'}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              leftIcon={
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                </svg>
-              }
             />
 
             <Select
               value={selectedClass}
               onChange={(e) => setSelectedClass(e.target.value)}
-            >
-              <option value="">{language === 'ko' ? '전체 반' : 'All Classes'}</option>
-              {uniqueClasses.map(className => (
-                <option key={className} value={className}>{className}</option>
-              ))}
-            </Select>
+              options={[
+                { label: language === 'ko' ? '전체 반' : 'All Classes', value: '' },
+                ...uniqueClasses.map(className => ({
+                  label: className,
+                  value: className
+                }))
+              ]}
+            />
 
             <Select
               value={selectedPerformance}
               onChange={(e) => setSelectedPerformance(e.target.value)}
-            >
-              <option value="">{language === 'ko' ? '전체 성적' : 'All Performance'}</option>
-              <option value="excellent">{language === 'ko' ? '우수 (90+)' : 'Excellent (≥90)'}</option>
-              <option value="good">{language === 'ko' ? '양호 (70-89)' : 'Good (70-89)'}</option>
-              <option value="needs-improvement">{language === 'ko' ? '주의 필요 (<70)' : 'Needs Attention (<70)'}</option>
-            </Select>
+              options={[
+                { label: language === 'ko' ? '전체 성적' : 'All Performance', value: '' },
+                { label: language === 'ko' ? '우수 (90+)' : 'Excellent (≥90)', value: 'excellent' },
+                { label: language === 'ko' ? '양호 (70-89)' : 'Good (70-89)', value: 'good' },
+                { label: language === 'ko' ? '주의 필요 (<70)' : 'Needs Attention (<70)', value: 'needs-improvement' }
+              ]}
+            />
 
             <Select
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value as any)}
-            >
-              <option value="name">{language === 'ko' ? '이름순' : 'Sort by Name'}</option>
-              <option value="score">{language === 'ko' ? '점수순' : 'Sort by Score'}</option>
-              <option value="activity">{language === 'ko' ? '활동순' : 'Sort by Activity'}</option>
-            </Select>
+              options={[
+                { label: language === 'ko' ? '이름순' : 'Sort by Name', value: 'name' },
+                { label: language === 'ko' ? '점수순' : 'Sort by Score', value: 'score' },
+                { label: language === 'ko' ? '활동순' : 'Sort by Activity', value: 'activity' }
+              ]}
+            />
           </div>
         </Card.Body>
       </Card>
@@ -298,7 +297,7 @@ export const StudentList = () => {
                     {/* Header */}
                     <div className="flex items-start justify-between">
                       <div className="flex items-center gap-3">
-                        <div className="w-12 h-12 bg-gradient-to-br from-primary-400 to-primary-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
+                        <div className="w-12 h-12 bg-linear-to-br from-primary-400 to-primary-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
                           {student.name.charAt(0)}
                         </div>
                         <div>
