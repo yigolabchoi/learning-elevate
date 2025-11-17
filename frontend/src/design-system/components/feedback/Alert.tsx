@@ -56,7 +56,7 @@ export const Alert: React.FC<AlertProps> = ({
     >
       <div className="flex items-start gap-3">
         <svg
-          className={cn('w-6 h-6 flex-shrink-0 mt-0.5', styles.icon)}
+          className={cn('w-6 h-6 shrink-0 mt-0.5', styles.icon)}
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -76,7 +76,7 @@ export const Alert: React.FC<AlertProps> = ({
         {onClose && (
           <button
             onClick={onClose}
-            className="flex-shrink-0 hover:opacity-70 focus:outline-none focus:ring-2 focus:ring-offset-2 rounded"
+            className="shrink-0 hover:opacity-70 focus:outline-none focus:ring-2 focus:ring-offset-2 rounded"
             aria-label="Close alert"
           >
             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">

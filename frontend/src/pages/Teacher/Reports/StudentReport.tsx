@@ -201,7 +201,7 @@ export const StudentReport = () => {
       </div>
 
       {/* AI Summary */}
-      <div className="bg-gradient-to-r from-purple-50 to-blue-50 border border-purple-200 rounded-lg p-6 mb-8">
+      <div className="bg-linear-to-r from-purple-50 to-blue-50 border border-purple-200 rounded-lg p-6 mb-8">
         <div className="flex items-start gap-4">
           <div className="p-3 bg-white rounded-lg shadow-sm">
             <svg className="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">

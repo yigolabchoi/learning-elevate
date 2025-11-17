@@ -150,7 +150,7 @@ export const SubmissionDetailModal = ({
         {/* Modal */}
         <div className="inline-block w-full max-w-4xl my-8 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl rounded-lg">
           {/* Header */}
-          <div className="bg-gradient-to-r from-primary-500 to-primary-600 px-6 py-4">
+          <div className="bg-linear-to-r from-primary-500 to-primary-600 px-6 py-4">
             <div className="flex items-center justify-between">
               <div className="flex-1">
                 <h2 className="text-xl font-bold text-white">Submission Review</h2>

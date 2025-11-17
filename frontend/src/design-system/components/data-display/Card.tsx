@@ -55,7 +55,7 @@ const CardHeader: React.FC<CardHeaderProps> = ({ title, subtitle, action, childr
             {title && <h3 className="text-lg font-semibold text-gray-900">{title}</h3>}
             {subtitle && <p className="text-sm text-gray-600 mt-1">{subtitle}</p>}
           </div>
-          {action && <div className="flex-shrink-0">{action}</div>}
+          {action && <div className="shrink-0">{action}</div>}
         </div>
       )}
     </div>

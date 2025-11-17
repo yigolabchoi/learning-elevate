@@ -172,7 +172,7 @@ export const StudentPractice = () => {
                 {/* Recommendation Reason */}
                 <div className="bg-white/80 border border-purple-200 rounded-lg p-3 mb-4">
                   <div className="flex items-start gap-2">
-                    <svg className="w-4 h-4 text-purple-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-4 h-4 text-purple-600 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"

@@ -138,7 +138,7 @@ export const StudentReport = () => {
         <h2 className="text-xl font-semibold mb-4">📋 Recommendations</h2>
         <div className="space-y-3">
           <div className="flex items-start gap-3">
-            <div className="w-6 h-6 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+            <div className="w-6 h-6 bg-primary-100 rounded-full flex items-center justify-center shrink-0 mt-0.5">
               <span className="text-primary-700 text-sm">1</span>
             </div>
             <div>
@@ -150,7 +150,7 @@ export const StudentReport = () => {
             </div>
           </div>
           <div className="flex items-start gap-3">
-            <div className="w-6 h-6 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+            <div className="w-6 h-6 bg-primary-100 rounded-full flex items-center justify-center shrink-0 mt-0.5">
               <span className="text-primary-700 text-sm">2</span>
             </div>
             <div>

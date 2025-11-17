@@ -27,7 +27,7 @@ export const PageHeader: React.FC<PageHeaderProps> = ({
           <h1 className="text-3xl font-bold text-gray-900">{title}</h1>
           {subtitle && <p className="mt-2 text-base text-gray-600">{subtitle}</p>}
         </div>
-        {actions && <div className="flex-shrink-0 flex items-center gap-3">{actions}</div>}
+        {actions && <div className="shrink-0 flex items-center gap-3">{actions}</div>}
       </div>
     </div>
   );

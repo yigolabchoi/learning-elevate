@@ -298,7 +298,7 @@ export const ChildDetails = () => {
             <ul className="space-y-3">
               {details.improvements.map((improvement, index) => (
                 <li key={index} className="flex items-start gap-3">
-                  <span className="text-green-600 mt-1 flex-shrink-0">✓</span>
+                  <span className="text-green-600 mt-1 shrink-0">✓</span>
                   <span className="text-gray-700 leading-relaxed">{improvement}</span>
                 </li>
               ))}
@@ -325,7 +325,7 @@ export const ChildDetails = () => {
             <ul className="space-y-3">
               {details.concerns.map((concern, index) => (
                 <li key={index} className="flex items-start gap-3">
-                  <span className="text-orange-600 mt-1 flex-shrink-0">!</span>
+                  <span className="text-orange-600 mt-1 shrink-0">!</span>
                   <span className="text-gray-700 leading-relaxed">{concern}</span>
                 </li>
               ))}
@@ -339,7 +339,7 @@ export const ChildDetails = () => {
       {/* Info Box */}
       <div className="mt-6 bg-blue-50 border border-blue-200 rounded-lg p-6">
         <div className="flex items-start gap-3">
-          <svg className="w-6 h-6 text-blue-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-6 h-6 text-blue-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path
               strokeLinecap="round"
               strokeLinejoin="round"

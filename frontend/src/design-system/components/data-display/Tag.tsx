@@ -40,7 +40,7 @@ export const Tag: React.FC<TagProps> = ({
         <button
           type="button"
           onClick={onClose}
-          className="flex-shrink-0 hover:opacity-70 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-gray-400 rounded-full"
+          className="shrink-0 hover:opacity-70 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-gray-400 rounded-full"
           aria-label="Remove tag"
         >
           <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">

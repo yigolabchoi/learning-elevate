@@ -52,7 +52,7 @@ export const StatCard: React.FC<StatCardProps> = ({
           )}
         </div>
         {icon && (
-          <div className="flex-shrink-0 p-3 bg-primary-100 rounded-lg text-primary-600">
+          <div className="shrink-0 p-3 bg-primary-100 rounded-lg text-primary-600">
             {icon}
           </div>
         )}

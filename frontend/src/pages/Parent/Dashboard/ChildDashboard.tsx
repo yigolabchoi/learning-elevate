@@ -101,7 +101,7 @@ export const ChildDashboard = () => {
       </button>
 
       {/* Header */}
-      <div className="bg-gradient-to-r from-primary-500 to-primary-600 rounded-lg p-6 text-white mb-6">
+      <div className="bg-linear-to-r from-primary-500 to-primary-600 rounded-lg p-6 text-white mb-6">
         <div className="flex items-start justify-between mb-4">
           <div>
             <h1 className="text-3xl font-bold mb-2">{dashboard.childName}</h1>
@@ -201,7 +201,7 @@ export const ChildDashboard = () => {
       {/* AI Summary */}
       <div className="bg-linear-to-br from-purple-50 to-blue-50 border-2 border-purple-200 rounded-lg p-6 mb-6">
         <div className="flex items-start gap-4">
-          <div className="p-3 bg-purple-100 rounded-lg flex-shrink-0">
+          <div className="p-3 bg-purple-100 rounded-lg shrink-0">
             <svg className="w-7 h-7 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path
                 strokeLinecap="round"

@@ -178,9 +178,9 @@ export const HistoryDetail = () => {
       </div>
 
       {/* AI Summary Feedback */}
-      <div className="bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-200 rounded-lg p-6 mb-6">
+      <div className="bg-linear-to-r from-blue-50 to-purple-50 border border-blue-200 rounded-lg p-6 mb-6">
         <div className="flex items-start gap-4">
-          <div className="p-3 bg-blue-100 rounded-lg flex-shrink-0">
+          <div className="p-3 bg-blue-100 rounded-lg shrink-0">
             <svg className="w-7 h-7 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path
                 strokeLinecap="round"
@@ -236,7 +236,7 @@ export const HistoryDetail = () => {
                 <div className="flex items-center gap-4 flex-1 text-left">
                   {/* Question Number */}
                   <div
-                    className={`flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold ${
+                    className={`shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold ${
                       question.isCorrect
                         ? 'bg-green-100 text-green-700'
                         : 'bg-red-100 text-red-700'
@@ -278,7 +278,7 @@ export const HistoryDetail = () => {
 
                 {/* Expand Icon */}
                 <svg
-                  className={`w-5 h-5 text-gray-400 transition-transform flex-shrink-0 ml-4 ${
+                  className={`w-5 h-5 text-gray-400 transition-transform shrink-0 ml-4 ${
                     isExpanded ? 'transform rotate-180' : ''
                   }`}
                   fill="none"
@@ -313,7 +313,7 @@ export const HistoryDetail = () => {
                     }`}
                   >
                     <div className="flex items-start gap-3">
-                      <div className="flex-shrink-0">
+                      <div className="shrink-0">
                         <svg className="w-5 h-5 text-blue-600 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path
                             strokeLinecap="round"

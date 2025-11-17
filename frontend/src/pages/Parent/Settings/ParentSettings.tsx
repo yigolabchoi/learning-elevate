@@ -128,7 +128,7 @@ export const ParentSettings = () => {
       {/* Success Message */}
       {showSuccessMessage && (
         <div className="mb-6 bg-green-50 border-2 border-green-500 rounded-lg p-4 flex items-center gap-3">
-          <svg className="w-6 h-6 text-green-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-6 h-6 text-green-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -216,7 +216,7 @@ export const ParentSettings = () => {
             </div>
             <button
               onClick={() => handleNotificationToggle('email')}
-              className={`ml-4 relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 ${
+              className={`ml-4 relative inline-flex h-6 w-11 shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 ${
                 profile.notificationPreferences.email ? 'bg-primary-600' : 'bg-gray-200'
               }`}
             >
@@ -239,7 +239,7 @@ export const ParentSettings = () => {
             <button
               onClick={() => handleNotificationToggle('sms')}
               disabled={!profile.phone}
-              className={`ml-4 relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 ${
+              className={`ml-4 relative inline-flex h-6 w-11 shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 ${
                 profile.notificationPreferences.sms ? 'bg-primary-600' : 'bg-gray-200'
               } ${!profile.phone ? 'opacity-50 cursor-not-allowed' : ''}`}
             >
@@ -261,7 +261,7 @@ export const ParentSettings = () => {
             </div>
             <button
               onClick={() => handleNotificationToggle('importantOnly')}
-              className={`ml-4 relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 ${
+              className={`ml-4 relative inline-flex h-6 w-11 shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 ${
                 profile.notificationPreferences.importantOnly ? 'bg-primary-600' : 'bg-gray-200'
               }`}
             >
@@ -313,7 +313,7 @@ export const ParentSettings = () => {
       {/* Info Box */}
       <div className="mt-6 bg-blue-50 border border-blue-200 rounded-lg p-6">
         <div className="flex items-start gap-3">
-          <svg className="w-6 h-6 text-blue-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-6 h-6 text-blue-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path
               strokeLinecap="round"
               strokeLinejoin="round"

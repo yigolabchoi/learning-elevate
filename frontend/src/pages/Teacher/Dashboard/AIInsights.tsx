@@ -63,10 +63,10 @@ export const AIInsightsDashboard = ({ teacherId }: AIInsightsDashboardProps) => 
   return (
     <div className="space-y-6">
       {/* AI 요약 */}
-      <Card className="bg-gradient-to-r from-purple-50 to-blue-50 border-2 border-purple-300">
+      <Card className="bg-linear-to-r from-purple-50 to-blue-50 border-2 border-purple-300">
         <Card.Body>
           <div className="flex items-start gap-3">
-            <div className="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center flex-shrink-0">
+            <div className="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center shrink-0">
               <Zap className="w-6 h-6 text-white" />
             </div>
             <div className="flex-1">
