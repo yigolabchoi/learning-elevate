@@ -5,8 +5,6 @@
  */
 
 import { useState, useEffect, useCallback, useRef } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { debounce } from '../utils';
 
 /**
  * useDebounce Hook
@@ -126,7 +124,7 @@ export const useAsync = <T>(
  * Get the previous value of a variable
  */
 export const usePrevious = <T>(value: T): T | undefined => {
-  const ref = useRef<T>();
+  const ref = useRef<T | undefined>(undefined);
 
   useEffect(() => {
     ref.current = value;
@@ -230,7 +228,7 @@ export const useWindowSize = (): WindowSize => {
  * Declarative setInterval
  */
 export const useInterval = (callback: () => void, delay: number | null): void => {
-  const savedCallback = useRef<() => void>();
+  const savedCallback = useRef<(() => void) | undefined>(undefined);
 
   useEffect(() => {
     savedCallback.current = callback;
@@ -249,7 +247,7 @@ export const useInterval = (callback: () => void, delay: number | null): void =>
  * Declarative setTimeout
  */
 export const useTimeout = (callback: () => void, delay: number | null): void => {
-  const savedCallback = useRef<() => void>();
+  const savedCallback = useRef<(() => void) | undefined>(undefined);
 
   useEffect(() => {
     savedCallback.current = callback;
