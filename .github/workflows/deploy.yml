@@ -71,15 +71,7 @@ jobs:
           aws s3 cp dist/index.html s3://${{ secrets.AWS_S3_BUCKET }}/index.html \
             --cache-control "no-cache, no-store, must-revalidate"
       
-      # 9. CloudFront 캐시 무효화 (선택사항)
-      - name: Invalidate CloudFront cache
-        if: secrets.AWS_CLOUDFRONT_DISTRIBUTION_ID
-        run: |
-          aws cloudfront create-invalidation \
-            --distribution-id ${{ secrets.AWS_CLOUDFRONT_DISTRIBUTION_ID }} \
-            --paths "/*"
-      
-      # 10. 배포 완료 알림
+      # 9. 배포 완료 알림
       - name: Deployment summary
         run: |
           echo "✅ Deployment completed successfully!"
