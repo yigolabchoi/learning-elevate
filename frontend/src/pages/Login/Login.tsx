@@ -139,7 +139,7 @@ export const Login = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary-50 via-white to-secondary-50">
+    <div className="min-h-screen flex items-center justify-center bg-linear-to-br from-primary-50 via-white to-secondary-50">
       <Box className="w-full max-w-md px-4">
         {/* 뒤로가기 버튼 */}
         <button

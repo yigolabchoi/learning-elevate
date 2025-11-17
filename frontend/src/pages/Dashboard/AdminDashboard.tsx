@@ -24,7 +24,7 @@ export const AdminDashboard = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
         <button
           onClick={() => navigate('/admin/classes')}
-          className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg shadow-lg p-6 text-white hover:shadow-xl transition-shadow text-left"
+          className="bg-linear-to-br from-blue-500 to-blue-600 rounded-lg shadow-lg p-6 text-white hover:shadow-xl transition-shadow text-left"
         >
           <div className="flex items-center justify-between mb-4">
             <div className="p-3 bg-white bg-opacity-20 rounded-lg">
@@ -44,7 +44,7 @@ export const AdminDashboard = () => {
 
         <button
           onClick={() => navigate('/admin/users')}
-          className="bg-gradient-to-br from-green-500 to-green-600 rounded-lg shadow-lg p-6 text-white hover:shadow-xl transition-shadow text-left"
+          className="bg-linear-to-br from-green-500 to-green-600 rounded-lg shadow-lg p-6 text-white hover:shadow-xl transition-shadow text-left"
         >
           <div className="flex items-center justify-between mb-4">
             <div className="p-3 bg-white bg-opacity-20 rounded-lg">
@@ -62,7 +62,7 @@ export const AdminDashboard = () => {
           <p className="text-green-100 text-sm">Manage teachers, students, and parents</p>
         </button>
 
-        <div className="bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg shadow-lg p-6 text-white">
+        <div className="bg-linear-to-br from-purple-500 to-purple-600 rounded-lg shadow-lg p-6 text-white">
           <div className="flex items-center justify-between mb-4">
             <div className="p-3 bg-white bg-opacity-20 rounded-lg">
               <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -79,7 +79,7 @@ export const AdminDashboard = () => {
           <p className="text-purple-100 text-sm">Coming soon...</p>
         </div>
 
-        <div className="bg-gradient-to-br from-orange-500 to-orange-600 rounded-lg shadow-lg p-6 text-white">
+        <div className="bg-linear-to-br from-orange-500 to-orange-600 rounded-lg shadow-lg p-6 text-white">
           <div className="flex items-center justify-between mb-4">
             <div className="p-3 bg-white bg-opacity-20 rounded-lg">
               <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">

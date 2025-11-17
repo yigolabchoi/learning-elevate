@@ -147,7 +147,7 @@ export const StudentPractice = () => {
             {recommendedSets.map((set) => (
               <div
                 key={set.id}
-                className="bg-gradient-to-br from-purple-50 to-blue-50 border-2 border-purple-200 rounded-lg p-6 hover:shadow-lg transition-all"
+                className="bg-linear-to-br from-purple-50 to-blue-50 border-2 border-purple-200 rounded-lg p-6 hover:shadow-lg transition-all"
               >
                 {/* Header */}
                 <div className="flex items-start justify-between mb-4">

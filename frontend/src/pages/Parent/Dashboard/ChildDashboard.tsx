@@ -199,7 +199,7 @@ export const ChildDashboard = () => {
       </div>
 
       {/* AI Summary */}
-      <div className="bg-gradient-to-br from-purple-50 to-blue-50 border-2 border-purple-200 rounded-lg p-6 mb-6">
+      <div className="bg-linear-to-br from-purple-50 to-blue-50 border-2 border-purple-200 rounded-lg p-6 mb-6">
         <div className="flex items-start gap-4">
           <div className="p-3 bg-purple-100 rounded-lg flex-shrink-0">
             <svg className="w-7 h-7 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">

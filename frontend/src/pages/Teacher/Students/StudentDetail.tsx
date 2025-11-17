@@ -140,7 +140,7 @@ export const StudentDetail = () => {
 
       {/* Overview Cards */}
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
-        <Card className="bg-gradient-to-br from-primary-50 to-primary-100 border-primary-300">
+        <Card className="bg-linear-to-br from-primary-50 to-primary-100 border-primary-300">
           <Card.Body>
             <Text variant="small" color="muted">
               {language === 'ko' ? '평균 점수' : 'Average Score'}

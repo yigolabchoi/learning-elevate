@@ -45,7 +45,7 @@ export const Avatar: React.FC<AvatarProps> = ({
     <div
       className={cn(
         'inline-flex items-center justify-center flex-shrink-0 overflow-hidden',
-        'bg-gradient-to-br from-primary-400 to-primary-600 text-white font-semibold',
+        'bg-linear-to-br from-primary-400 to-primary-600 text-white font-semibold',
         sizeMap[size],
         shape === 'circle' ? 'rounded-full' : 'rounded-lg',
         className
